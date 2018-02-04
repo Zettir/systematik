@@ -1,4 +1,28 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Systematik"
 theme = "systematik"
+
+
+# Sub Menu 1
+[params.subMenu1]
+	enable = true
+	title = "Sub Menu 1"
+	subtitle = "Lorem ipsum dolor sit amet consectetur."
+
+	columns = "c-10"
+	columnsSpan = "cs-12"
+	rows = ""
+	rowsSpan = "rs-6"
+
+# postpended links
+[[menu.postpend]]
+	url = "#"
+	name = "Link 1"
+	weight = 10
+
+# postpended links
+[[menu.postpend]]
+	url = "#"
+	name = "Link 2"
+	weight = 20

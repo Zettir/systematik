@@ -1,0 +1,137 @@
+/* ----------------------------------------------------------
+	CSS | Grid
+   ---------------------------------------------------------- */
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+}
+
+/* -----------------------------
+	CSS | Grid - Columns
+   ----------------------------- */
+
+.c-1 {
+	grid-column-start: 1;
+}
+.c-2 {
+	grid-column-start: 2;
+}
+.c-3 {
+	grid-column-start: 3;
+}
+.c-4 {
+	grid-column-start: 4;
+}
+.c-5 {
+	grid-column-start: 5;
+}
+.c-6 {
+	grid-column-start: 6;
+}
+.c-7 {
+	grid-column-start: 7;
+}
+.c-8 {
+	grid-column-start: 8;
+}
+.c-9 {
+	grid-column-start: 9;
+}
+.c-10 {
+	grid-column-start: 10;
+}
+.c-11 {
+	grid-column-start: 11;
+}
+.c-12 {
+	grid-column-start: 12;
+}
+
+/* -----------------------------
+	CSS | Grid - Columns Span
+   ----------------------------- */
+
+.cs-1 {
+	grid-column-end: span 1;
+}
+.cs-2 {
+	grid-column-end: span 2;
+}
+.cs-3 {
+	grid-column-end: span 3;
+}
+.cs-4 {
+	grid-column-end: span 4;
+}
+.cs-5 {
+	grid-column-end: span 5;
+}
+.cs-6 {
+	grid-column-end: span 6;
+}
+.cs-7 {
+	grid-column-end: span 7;
+}
+.cs-8 {
+	grid-column-end: span 8;
+}
+.cs-9 {
+	grid-column-end: span 9;
+}
+.cs-10 {
+	grid-column-end: span 10;
+}
+.cs-11 {
+	grid-column-end: span 11;
+}
+.cs-12 {
+	grid-column-end: span 12;
+}
+
+/* -----------------------------
+	CSS | Grid - Rows
+   ----------------------------- */
+
+.r-1 {
+	grid-row-start: 1;
+}
+.r-2 {
+	grid-row-start: 2;
+}
+.r-3 {
+	grid-row-start: 3;
+}
+.r-4 {
+	grid-row-start: 4;
+}
+.r-5 {
+	grid-row-start: 5;
+}
+.r-6 {
+	grid-row-start: 6;
+}
+
+/* -----------------------------
+	CSS | Grid - Rows Span
+   ----------------------------- */
+
+.rs-1 {
+	grid-row-end: span 1;
+}
+.rs-2 {
+	grid-row-end: span 2;
+}
+.rs-3 {
+	grid-row-end: span 3;
+}
+.rs-4 {
+	grid-row-end: span 4;
+}
+.rs-5 {
+	grid-row-end: span 5;
+}
+.rs-6 {
+	grid-row-end: span 6;
+}
