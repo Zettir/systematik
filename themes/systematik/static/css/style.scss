@@ -1,5 +1,26 @@
-/* SCSS FIL til at styling */
-
+/* ----------------------------------------------------------
+	SCSS | General
+   ---------------------------------------------------------- */
 body {
-    background-color: pink;
+	background-color: #f5f5f5;
+}
+.main-container {
+	background-color: #ffffff;
+	max-width: 1440px;
+	width: 100vw;
+	height: 100vh;
+	margin: auto;
+}
+.main-menu {
+	background-color: #202020;
+	max-width: 1440px;
+	width: 100vw;
+	height: 60px;
+	position: fixed;
+	bottom: 0;
+}
+
+section {
+	background-color: #fafafa;
+	margin: 20px;
 }
