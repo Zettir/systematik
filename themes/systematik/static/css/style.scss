@@ -1,5 +1,13 @@
 /* ----------------------------------------------------------
-	SCSS | Typografi
+	CSS | Colors
+   ---------------------------------------------------------- */
+
+$blue-color: #0033ff;
+$blue-color-darken: #0033cc;
+$blue-color-lighten: #0044ff;
+
+/* ----------------------------------------------------------
+	CSS | Typografi
    ---------------------------------------------------------- */
 
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
@@ -48,46 +56,177 @@ small, .font_small {
 }
 
 /* ----------------------------------------------------------
-	SCSS | General
+	CSS | General
    ---------------------------------------------------------- */
 
 body {
 	background-color: #f5f5f5;
 }
+header {
+	padding: 0 21px;
+}
+.logo {
+	width: 33.333%;
+}
+.logo img {
+	min-width: 300px;
+	height: auto;
+}
 .main-container {
-	background-color: #ffffff;
 	max-width: 1440px;
 	width: 100vw;
-	margin: 50px auto 0;
-	padding-top: 20px;
+	margin: auto;
 }
+.container {
+	background-color: #ffffff;
+	display: flex;
+	padding: 20px;
+}
+
+/* ----------------------------------------------------------
+	CSS | Menus
+   ---------------------------------------------------------- */
+/* -----------------------------
+	CSS | Menu - Main
+   ----------------------------- */
+
 .main-menu {
 	background-color: #202020;
 	max-width: 1440px;
 	width: 100vw;
 	height: 70px;
+	margin-left: -20px;
 	position: fixed;
 	bottom: 0;
 	box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.3);
 }
+
+/* -----------------------------
+	CSS | Menu - Sub
+   ----------------------------- */
+
 .sub-menu {
 	background-color: #202020;
-	padding: 20px;
 }
-.sub-menu a {
-	padding: 5px;
-	border: 2px solid #0033ff
+.sub-menu ul {
+	display: flex;
+	padding: 0 5px;
 }
+.sub-menu ul .subMenuTitle {
+	margin: 30px 20px 10px;
+	padding: 0 20px 1.5vw;
+	color: #e8e8e8;
+	font-size: 3.2vw;
+	border-bottom: 4px solid #666666;
+}
+.sub-menu ul li {
+	padding: 5px 20px;
+}
+.sub-menu ul li a {
+	display: flex;
+	align-items: center;
+	position: relative;
+	color: #f5f5f5;
+	font-size: 2.2vw;
+	font-weight: 500;
+	line-height: 30px;
+	letter-spacing: 0.05em;
+}
+.sub-menu ul li a span {
+	width: 100%;
+	padding: 10px 20px;
+}
+@media screen and (min-width: 668px) {
+	.sub-menu ul {
+		flex-direction: column;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.sub-menu ul {
+		flex-direction: row;
+		position: relative;
+	}
+	.sub-menu ul .subMenuTitle {
+		position: absolute;
+		left: 0;
+		bottom: 60px;
+		font-size: 30px;
+		border: none;
+	}
+	.sub-menu ul::before {
+		content: "\f152";
+		display: flex;
+		align-items: center;
+		padding-left: 20px;
+		padding-right: 10px;
+		color: #f5f5f5;
+		font-family: "Font Awesome 5 Free";
+		font-weight: 400;
+		font-size: 32px;
+	}
+	.sub-menu ul li {
+		padding: 10px 5px;
+	}
+	.sub-menu ul li a {
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+/* ----------------------------------------------------------
+	CSS | Sections - Main
+   ---------------------------------------------------------- */
 
 section {
-	background-color: #fafafa;
-	margin: 0 20px 20px;
+	background-color: #f5f5f5;
 	border: 1px solid #e8e8e8;
 }
+
+
+/* -----------------------------
+	CSS | Sections - Sub
+   ----------------------------- */
+
 .sub-section {
 	background-color: #e8e8e8;
 	padding: 20px;
 }
+
+
 article {
 	padding: 20px;
+}
+
+
+/* ----------------------------------------------------------
+	CSS | Theme - Blue
+   ---------------------------------------------------------- */
+/* -----------------------------
+	CSS | General
+   ----------------------------- */
+
+.blue .container {
+	background-color: $blue-color;
+}
+
+/* -----------------------------
+	CSS | Menu - Sub
+   ----------------------------- */
+
+.blue .sub-menu ul li a {
+	border-color: $blue-color;
+}
+.blue .sub-menu ul li a:hover span {
+	background-color: $blue-color;
+}
+.blue .sub-menu ul li a:hover span {
+	background-color: #262626;
+}
+
+/* -----------------------------
+	CSS | Section - Main
+   ----------------------------- */
+
+.blue section {
+	background-color: $blue-color-darken;
+	border-color: $blue-color-lighten;
 }

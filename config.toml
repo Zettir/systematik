@@ -5,9 +5,10 @@ theme = "systematik"
 sectionPagesMenu = "mainMenu"
 
 [params]
+	themeColor = "blue"
 	brand = "Systematik"
 	# Optional logo as brand stored in img/
-	#logo = "logo.png"
+	logo = "logo.svg"
 
 [params.sections]
 	row1 = "section1"
@@ -30,6 +31,7 @@ sectionPagesMenu = "mainMenu"
 	rowSpan			= "s-rs-1"
 
 	subMenu = "1"
+	subMenuTitle = "Documentation"
 	subMenuColumnStart 	= "s-c-1"
 	subMenuColumnSpan 	= "s-cs-3 m-cs-1 l-cs-2"
 
@@ -44,10 +46,22 @@ sectionPagesMenu = "mainMenu"
 
 # Sub Menu - 1
 [[menu.submenu1]]
-	name = "Link 1"
-	url = "#"
-	weight = 10
+	name = "Getting Started"
+	url = "#section2"
+	weight = 1
 
+[[menu.submenu1]]
+	name = "Style"
+	url = "#section3"
+	weight = 2
+
+[[menu.submenu1]]
+	name = "Components"
+	url = "#section4"
+	weight = 3
+
+
+# Sub Menu - 2
 [[menu.submenu2]]
 	name = "Link 2"
 	url = "#"
