@@ -2,27 +2,58 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Systematik"
 theme = "systematik"
+sectionPagesMenu = "mainMenu"
 
+[params]
+	brand = "Systematik"
+	# Optional logo as brand stored in img/
+	#logo = "logo.png"
 
-# Sub Menu 1
-[params.subMenu1]
+[params.sections]
+	row1 = "section1"
+	row2 = "section2"
+	row3 = "section3"
+	row4 = "section4"
+	row5 = "section5"
+	row6 = "section6"
+
+# Main | Section - 1
+[params.section1]
 	enable = true
-	title = "Sub Menu 1"
+	title = "Section 1"
 	subtitle = "Lorem ipsum dolor sit amet consectetur."
 
-	columns = "c-10"
-	columnsSpan = "cs-12"
-	rows = ""
-	rowsSpan = "rs-6"
+	columnStart 	= "s-c-1 m-c-2 l-c-1"
+	columnSpan 		= "s-cs-3 l-cs-2"
 
-# postpended links
-[[menu.postpend]]
-	url = "#"
+	rowStart		= "s-r-2 m-r-1"
+	rowSpan			= "s-rs-1"
+
+	subMenu = "1"
+	subMenuColumnStart 	= "s-c-1"
+	subMenuColumnSpan 	= "s-cs-3 m-cs-1 l-cs-2"
+
+	subMenuRowStart		= "s-r-1 l-r-2"
+	subMenuRowSpan 		= "s-rs-1 m-rs-2 l-rs-1"
+
+
+# Sub | Section - 1
+[params.subSection1]
+	enable = true
+
+
+# Sub Menu - 1
+[[menu.submenu1]]
 	name = "Link 1"
+	url = "#"
 	weight = 10
 
-# postpended links
-[[menu.postpend]]
-	url = "#"
+[[menu.submenu2]]
 	name = "Link 2"
+	url = "#"
+	weight = 20
+
+[[menu.submenu3]]
+	name = "Link 3"
+	url = "#"
 	weight = 20

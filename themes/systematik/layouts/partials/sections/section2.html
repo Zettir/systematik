@@ -1,0 +1,14 @@
+<!-------------------------------
+	HTML | Section 2
+  ------------------------------->
+
+	<section id="section2" class="grid">
+		<article class="c-1 cs-9 rs-6">
+			<h1>{{ .Title }}</h1>
+			{{ .Content }}
+		</article>
+		{{ if .Site.Params.subSection1.enable }}
+			{{ partial "subSections/subSection1.html" . }}
+		{{ end }}
+		<nav class="sub-menu">{{ partial "subMenus/subMenu1.html" . }}</nav>
+	</section>

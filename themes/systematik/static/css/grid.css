@@ -4,112 +4,112 @@
 
 .grid {
 	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(6, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto auto auto;
 }
 
 /* -----------------------------
-	CSS | Grid - Columns
+	CSS | Grid - Start Column
    ----------------------------- */
 
-.c-1 {
+.s-c-1 {
 	grid-column-start: 1;
 }
-.c-2 {
+.s-c-2 {
 	grid-column-start: 2;
 }
-.c-3 {
+.s-c-3 {
 	grid-column-start: 3;
 }
-.c-4 {
+.s-c-4 {
 	grid-column-start: 4;
 }
-.c-5 {
+.s-c-5 {
 	grid-column-start: 5;
 }
-.c-6 {
+.s-c-6 {
 	grid-column-start: 6;
 }
-.c-7 {
+.s-c-7 {
 	grid-column-start: 7;
 }
-.c-8 {
+.s-c-8 {
 	grid-column-start: 8;
 }
-.c-9 {
+.s-c-9 {
 	grid-column-start: 9;
 }
-.c-10 {
+.s-c-10 {
 	grid-column-start: 10;
 }
-.c-11 {
+.s-c-11 {
 	grid-column-start: 11;
 }
-.c-12 {
+.s-c-12 {
 	grid-column-start: 12;
 }
 
 /* -----------------------------
-	CSS | Grid - Columns Span
+	CSS | Grid - End Column
    ----------------------------- */
 
-.cs-1 {
+.s-cs-1 {
 	grid-column-end: span 1;
 }
-.cs-2 {
+.s-cs-2 {
 	grid-column-end: span 2;
 }
-.cs-3 {
+.s-cs-3 {
 	grid-column-end: span 3;
 }
-.cs-4 {
+.s-cs-4 {
 	grid-column-end: span 4;
 }
-.cs-5 {
+.s-cs-5 {
 	grid-column-end: span 5;
 }
-.cs-6 {
+.s-cs-6 {
 	grid-column-end: span 6;
 }
-.cs-7 {
+.s-cs-7 {
 	grid-column-end: span 7;
 }
-.cs-8 {
+.s-cs-8 {
 	grid-column-end: span 8;
 }
-.cs-9 {
+.s-cs-9 {
 	grid-column-end: span 9;
 }
-.cs-10 {
+.s-cs-10 {
 	grid-column-end: span 10;
 }
-.cs-11 {
+.s-cs-11 {
 	grid-column-end: span 11;
 }
-.cs-12 {
+.s-cs-12 {
 	grid-column-end: span 12;
 }
 
 /* -----------------------------
-	CSS | Grid - Rows
+	CSS | Grid - Start Row
    ----------------------------- */
 
-.r-1 {
+.s-r-1 {
 	grid-row-start: 1;
 }
-.r-2 {
+.s-r-2 {
 	grid-row-start: 2;
 }
-.r-3 {
+.s-r-3 {
 	grid-row-start: 3;
 }
-.r-4 {
+.s-r-4 {
 	grid-row-start: 4;
 }
-.r-5 {
+.s-r-5 {
 	grid-row-start: 5;
 }
-.r-6 {
+.s-r-6 {
 	grid-row-start: 6;
 }
 
@@ -117,21 +117,293 @@
 	CSS | Grid - Rows Span
    ----------------------------- */
 
-.rs-1 {
+.s-rs-1 {
 	grid-row-end: span 1;
 }
-.rs-2 {
+.s-rs-2 {
 	grid-row-end: span 2;
 }
-.rs-3 {
+.s-rs-3 {
 	grid-row-end: span 3;
 }
-.rs-4 {
+.s-rs-4 {
 	grid-row-end: span 4;
 }
-.rs-5 {
+.s-rs-5 {
 	grid-row-end: span 5;
 }
-.rs-6 {
+.s-rs-6 {
 	grid-row-end: span 6;
+}
+
+/* ----------------------------------------------------------
+	CSS | Media over - 668px
+   ---------------------------------------------------------- */
+
+@media screen and (min-width: 668px) {
+
+/* -----------------------------
+	CSS | Grid - Start Column
+   ----------------------------- */
+
+.m-c-1 {
+	grid-column-start: 1;
+}
+.m-c-2 {
+	grid-column-start: 2;
+}
+.m-c-3 {
+	grid-column-start: 3;
+}
+.m-c-4 {
+	grid-column-start: 4;
+}
+.m-c-5 {
+	grid-column-start: 5;
+}
+.m-c-6 {
+	grid-column-start: 6;
+}
+.m-c-7 {
+	grid-column-start: 7;
+}
+.m-c-8 {
+	grid-column-start: 8;
+}
+.m-c-9 {
+	grid-column-start: 9;
+}
+.m-c-10 {
+	grid-column-start: 10;
+}
+.m-c-11 {
+	grid-column-start: 11;
+}
+.m-c-12 {
+	grid-column-start: 12;
+}
+
+/* -----------------------------
+	CSS | Grid - End Column
+   ----------------------------- */
+
+.m-cs-1 {
+	grid-column-end: span 1;
+}
+.m-cs-2 {
+	grid-column-end: span 2;
+}
+.m-cs-3 {
+	grid-column-end: span 3;
+}
+.m-cs-4 {
+	grid-column-end: span 4;
+}
+.m-cs-5 {
+	grid-column-end: span 5;
+}
+.m-cs-6 {
+	grid-column-end: span 6;
+}
+.m-cs-7 {
+	grid-column-end: span 7;
+}
+.m-cs-8 {
+	grid-column-end: span 8;
+}
+.m-cs-9 {
+	grid-column-end: span 9;
+}
+.m-cs-10 {
+	grid-column-end: span 10;
+}
+.m-cs-11 {
+	grid-column-end: span 11;
+}
+.m-cs-12 {
+	grid-column-end: span 12;
+}
+
+/* -----------------------------
+	CSS | Grid - Start Row
+   ----------------------------- */
+
+.m-r-1 {
+	grid-row-start: 1;
+}
+.m-r-2 {
+	grid-row-start: 2;
+}
+.m-r-3 {
+	grid-row-start: 3;
+}
+.m-r-4 {
+	grid-row-start: 4;
+}
+.m-r-5 {
+	grid-row-start: 5;
+}
+.m-r-6 {
+	grid-row-start: 6;
+}
+
+/* -----------------------------
+	CSS | Grid - Rows Span
+   ----------------------------- */
+
+.m-rs-1 {
+	grid-row-end: span 1;
+}
+.m-rs-2 {
+	grid-row-end: span 2;
+}
+.m-rs-3 {
+	grid-row-end: span 3;
+}
+.m-rs-4 {
+	grid-row-end: span 4;
+}
+.m-rs-5 {
+	grid-row-end: span 5;
+}
+.m-rs-6 {
+	grid-row-end: span 6;
+}
+
+}
+
+/* ----------------------------------------------------------
+	CSS | Media over - 1024px
+   ---------------------------------------------------------- */
+
+@media screen and (min-width: 1024px) {
+
+/* -----------------------------
+	CSS | Grid - Start Column
+   ----------------------------- */
+
+.l-c-1 {
+	grid-column-start: 1;
+}
+.l-c-2 {
+	grid-column-start: 2;
+}
+.l-c-3 {
+	grid-column-start: 3;
+}
+.l-c-4 {
+	grid-column-start: 4;
+}
+.l-c-5 {
+	grid-column-start: 5;
+}
+.l-c-6 {
+	grid-column-start: 6;
+}
+.l-c-7 {
+	grid-column-start: 7;
+}
+.l-c-8 {
+	grid-column-start: 8;
+}
+.l-c-9 {
+	grid-column-start: 9;
+}
+.l-c-10 {
+	grid-column-start: 10;
+}
+.l-c-11 {
+	grid-column-start: 11;
+}
+.l-c-12 {
+	grid-column-start: 12;
+}
+
+/* -----------------------------
+	CSS | Grid - End Column
+   ----------------------------- */
+
+.l-cs-1 {
+	grid-column-end: span 1;
+}
+.l-cs-2 {
+	grid-column-end: span 2;
+}
+.l-cs-3 {
+	grid-column-end: span 3;
+}
+.l-cs-4 {
+	grid-column-end: span 4;
+}
+.l-cs-5 {
+	grid-column-end: span 5;
+}
+.l-cs-6 {
+	grid-column-end: span 6;
+}
+.l-cs-7 {
+	grid-column-end: span 7;
+}
+.l-cs-8 {
+	grid-column-end: span 8;
+}
+.l-cs-9 {
+	grid-column-end: span 9;
+}
+.l-cs-10 {
+	grid-column-end: span 10;
+}
+.l-cs-11 {
+	grid-column-end: span 11;
+}
+.l-cs-12 {
+	grid-column-end: span 12;
+}
+
+/* -----------------------------
+	CSS | Grid - Start Row
+   ----------------------------- */
+
+.l-r-1 {
+	grid-row-start: 1;
+}
+.l-r-2 {
+	grid-row-start: 2;
+}
+.l-r-3 {
+	grid-row-start: 3;
+}
+.l-r-4 {
+	grid-row-start: 4;
+}
+.l-r-5 {
+	grid-row-start: 5;
+}
+.l-r-6 {
+	grid-row-start: 6;
+}
+
+/* -----------------------------
+	CSS | Grid - Rows Span
+   ----------------------------- */
+
+.l-rs-1 {
+	grid-row-end: span 1;
+}
+.l-rs-2 {
+	grid-row-end: span 2;
+}
+.l-rs-3 {
+	grid-row-end: span 3;
+}
+.l-rs-4 {
+	grid-row-end: span 4;
+}
+.l-rs-5 {
+	grid-row-end: span 5;
+}
+.l-rs-6 {
+	grid-row-end: span 6;
+}
+
 }

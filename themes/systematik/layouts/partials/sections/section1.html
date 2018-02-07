@@ -1,0 +1,16 @@
+<!-------------------------------
+	HTML | Section 1
+  ------------------------------->
+
+	<section id="section1" class="grid">
+		<article class="{{ with .Site.Params.section1.columnStart }}{{ . }}{{ end }} {{ with .Site.Params.section1.columnSpan }}{{ . }}{{ end }} {{ with .Site.Params.section1.rowStart }}{{ . }}{{ end }} {{ with .Site.Params.section1.rowSpan }}{{ . }}{{ end }}">
+			<h1>{{ .Title }}</h1>
+			{{ .Content }}
+		</article>
+			{{ if .Site.Params.subSection1.enable }}
+				{{ partial "subSections/subSection1.html" . }}
+			{{ end }}
+		<nav class="sub-menu {{ with .Site.Params.section1.subMenuColumnStart }}{{ . }}{{ end }} {{ with .Site.Params.section1.subMenuColumnSpan }}{{ . }}{{ end }} {{ with .Site.Params.section1.subMenuRowStart }}{{ . }}{{ end }} {{ with .Site.Params.section1.subMenuRowSpan }}{{ . }}{{ end }}">
+			{{ partial "subMenus/subMenus.html" . }}
+		</nav>
+	</section>

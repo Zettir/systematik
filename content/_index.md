@@ -1,7 +1,7 @@
 ---
-title: "_Index"
+title: "Getting Started"
 date: 2018-02-01T09:02:11+01:00
 draft: true
 ---
 
-Det her er Index siden!
+A modern responsive front-end framework based on Material Design

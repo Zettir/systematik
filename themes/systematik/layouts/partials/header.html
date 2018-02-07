@@ -7,9 +7,20 @@
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/grid.css">
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
 </head>
-<body>
+<body id="page-top">
 <div class="main-container">
 	<header class="main-top"> 
+
+		{{ if .Site.Params.logo }}
+			<a class="logo" href="{{ if .IsHome }}/#page-top{{ else }}{{ .Site.BaseURL }}{{ end }}">
+				{{ $url := printf "img/%s" .Site.Params.logo }}
+				<img src="{{ $url | absURL }}" class="img-responsive" alt="{{ .Site.Params.brand }}">
+			</a>
+		{{ else }}
+			<a class="logo" href="{{ if .IsHome }}/#page-top{{ else }}{{ .Site.BaseURL }}{{ end }}">
+				{{ .Site.Params.brand }}
+			</a>
+		{{ end }}
 
 		<!-- -----------------------------
 			HTML | Header - Main Menu

@@ -1,13 +1,5 @@
 {{ partial "header.html" . }}
-	<section class="grid">
-		<article class="c-1 cs-9 rs-6">
-			<h1>{{ .Title }}</h1>
-			{{ .Content }}
-		</article>
-		{{ if .Site.Params.subMenu1.enable }}
-			{{ partial "subMenu/subMenu1.html" . }}
-		{{ end }}
-
-
-	</section>
+	<div class="container">
+		{{ partial "sections.html" . }}
+	</div>
 {{ partial "footer.html" . }}
