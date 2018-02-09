@@ -1,0 +1,6 @@
+{{ with .Site.GetPage "page" "subSections/subSection1.md" }}
+<div class="sub-section {{ .Params.columnStart }} {{ .Params.columnSpan }} {{ .Params.rowStart }} {{ .Params.rowSpan }}">
+		<h2>Error</h2>
+		<h3></h3>
+</div>
+{{ end }}

@@ -62,7 +62,7 @@ small, .font_small {
 body {
 	background-color: #f5f5f5;
 }
-header {
+.main-top {
 	padding: 0 21px;
 }
 .logo {
@@ -80,7 +80,19 @@ header {
 .container {
 	background-color: #ffffff;
 	display: flex;
-	padding: 20px;
+	flex-direction: column;
+	padding: 20px 20px 100px;
+}
+.container header {
+	background-color: #f5f5f5;
+	background-image: url("../img/bg-2.png");
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 20px;
+	border: 1px solid #e8e8e8;
+}
+.container header img:first-child {
+	display: none;
 }
 
 /* ----------------------------------------------------------
@@ -98,6 +110,7 @@ header {
 	margin-left: -20px;
 	position: fixed;
 	bottom: 0;
+	z-index: 999;
 	box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -125,6 +138,7 @@ header {
 .sub-menu ul li a {
 	display: flex;
 	align-items: center;
+	padding: 0 10px;
 	position: relative;
 	color: #f5f5f5;
 	font-size: 2.2vw;
@@ -132,52 +146,36 @@ header {
 	line-height: 30px;
 	letter-spacing: 0.05em;
 }
+.sub-menu ul li a:hover {
+	background-color: #262626;
+}
 .sub-menu ul li a span {
 	width: 100%;
-	padding: 10px 20px;
+	padding: 10px;
 }
-@media screen and (min-width: 668px) {
-	.sub-menu ul {
-		flex-direction: column;
-	}
+.sub-menu ul li a .svg-inline--fa {
+	display: flex;
+	align-items: center;
+	margin: 10px;
+	padding: 5px;
+	color: #f5f5f5;
+	font-size: 30px;
 }
-@media screen and (min-width: 1024px) {
-	.sub-menu ul {
-		flex-direction: row;
-		position: relative;
-	}
-	.sub-menu ul .subMenuTitle {
-		position: absolute;
-		left: 0;
-		bottom: 60px;
-		font-size: 30px;
-		border: none;
-	}
-	.sub-menu ul::before {
-		content: "\f152";
-		display: flex;
-		align-items: center;
-		padding-left: 20px;
-		padding-right: 10px;
-		color: #f5f5f5;
-		font-family: "Font Awesome 5 Free";
-		font-weight: 400;
-		font-size: 32px;
-	}
-	.sub-menu ul li {
-		padding: 10px 5px;
-	}
-	.sub-menu ul li a {
-		font-size: 20px;
-		line-height: 30px;
-	}
+.sub-menu ul li a .svg-inline--fa.icon-border {
+	border: 2px solid #f5f5f5;
 }
+.sub-menu ul li a:hover .svg-inline--fa {
+	color: white;
+	animation: step-end;
+}
+
 /* ----------------------------------------------------------
 	CSS | Sections - Main
    ---------------------------------------------------------- */
 
 section {
 	background-color: #f5f5f5;
+	margin-bottom: 20px;
 	border: 1px solid #e8e8e8;
 }
 
@@ -193,7 +191,7 @@ section {
 
 
 article {
-	padding: 20px;
+	padding: 25px;
 }
 
 
@@ -207,6 +205,10 @@ article {
 .blue .container {
 	background-color: $blue-color;
 }
+.blue .container header {
+	background-color: $blue-color-darken;
+	border-color: $blue-color-lighten;
+}
 
 /* -----------------------------
 	CSS | Menu - Sub
@@ -215,11 +217,8 @@ article {
 .blue .sub-menu ul li a {
 	border-color: $blue-color;
 }
-.blue .sub-menu ul li a:hover span {
+.blue .sub-menu ul li a:hover {
 	background-color: $blue-color;
-}
-.blue .sub-menu ul li a:hover span {
-	background-color: #262626;
 }
 
 /* -----------------------------
@@ -227,6 +226,49 @@ article {
    ----------------------------- */
 
 .blue section {
-	background-color: $blue-color-darken;
 	border-color: $blue-color-lighten;
+}
+
+
+
+/* ----------------------------------------------------------
+	CSS | Media Queries
+   ---------------------------------------------------------- */
+/* -----------------------------
+	CSS | Over - 668px
+   ----------------------------- */
+
+@media screen and (min-width: 668px) {
+	.sub-menu ul {
+		flex-direction: column;
+	}
+}
+
+/* -----------------------------
+	CSS | Over - 1024px
+   ----------------------------- */
+
+@media screen and (min-width: 1024px) {
+	article {
+		padding-bottom: 70px;
+	}
+	.sub-menu ul {
+		flex-direction: row;
+		position: relative;
+	}
+	.sub-menu ul .subMenuTitle {
+		padding: 0 20px 18px;
+		position: absolute;
+		left: -15px;
+		bottom: 60px;
+		font-size: 30px;
+		border: none;
+	}
+	.sub-menu ul li {
+		padding: 10px 5px;
+	}
+	.sub-menu ul li a {
+		font-size: 20px;
+		line-height: 30px;
+	}
 }

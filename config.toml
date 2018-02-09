@@ -10,6 +10,24 @@ sectionPagesMenu = "mainMenu"
 	# Optional logo as brand stored in img/
 	logo = "logo.svg"
 
+# Site - Header
+[params.header]
+	columnStart 	= "s-c-1 m-c-2 l-c-1"
+	columnSpan 		= "s-cs-3 l-cs-2"
+
+	rowStart		= "s-r-2 m-r-1"
+	rowSpan			= "s-rs-1"
+
+	menu = "1"
+		menuTitle = "Documentation"
+		subMenuTheme = "black"
+
+		menuColumnStart 	= "s-c-1"
+		menuColumnSpan 		= "s-cs-3 m-cs-1 l-cs-2"
+
+		menuRowStart 		= "s-r-1 l-r-2"
+		menuRowSpan 		= "s-rs-1 m-rs-2 l-rs-1"
+
 [params.sections]
 	row1 = "section1"
 	row2 = "section2"
@@ -21,8 +39,7 @@ sectionPagesMenu = "mainMenu"
 # Main | Section - 1
 [params.section1]
 	enable = true
-	title = "Section 1"
-	subtitle = "Lorem ipsum dolor sit amet consectetur."
+	slug = "get-started"
 
 	columnStart 	= "s-c-1 m-c-2 l-c-1"
 	columnSpan 		= "s-cs-3 l-cs-2"
@@ -30,34 +47,34 @@ sectionPagesMenu = "mainMenu"
 	rowStart		= "s-r-2 m-r-1"
 	rowSpan			= "s-rs-1"
 
+	subSection = "1"
+
 	subMenu = "1"
-	subMenuTitle = "Documentation"
-	subMenuColumnStart 	= "s-c-1"
-	subMenuColumnSpan 	= "s-cs-3 m-cs-1 l-cs-2"
+		subMenuTitle = "Test"
+		subMenuTheme = "light"
 
-	subMenuRowStart		= "s-r-1 l-r-2"
-	subMenuRowSpan 		= "s-rs-1 m-rs-2 l-rs-1"
+		subMenuColumnStart 	= "s-c-1"
+		subMenuColumnSpan 	= "s-cs-3 m-cs-1 l-cs-2"
 
-
-# Sub | Section - 1
-[params.subSection1]
-	enable = true
+		subMenuRowStart		= "s-r-1 l-r-2"
+		subMenuRowSpan 		= "s-rs-1 m-rs-2 l-rs-1"
 
 
 # Sub Menu - 1
-[[menu.submenu1]]
-	name = "Getting Started"
-	url = "#section2"
+[[menu.menu1]]
+	name = "Get Started"
+	url = "#get-started"
 	weight = 1
+	pre = "<i class='fas fa-terminal icon-border ani-1'></i>"
 
-[[menu.submenu1]]
+[[menu.menu1]]
 	name = "Style"
-	url = "#section3"
+	url = "#style"
 	weight = 2
 
-[[menu.submenu1]]
+[[menu.menu1]]
 	name = "Components"
-	url = "#section4"
+	url = "#components"
 	weight = 3
 
 

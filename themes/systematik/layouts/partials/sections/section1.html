@@ -1,15 +1,14 @@
 <!-------------------------------
 	HTML | Section 1
   ------------------------------->
-
-	<section id="section1" class="grid">
+	<section id="{{ with .Site.Params.section1.slug }}{{ . }}{{ end }}" class="grid">
 		<article class="{{ with .Site.Params.section1.columnStart }}{{ . }}{{ end }} {{ with .Site.Params.section1.columnSpan }}{{ . }}{{ end }} {{ with .Site.Params.section1.rowStart }}{{ . }}{{ end }} {{ with .Site.Params.section1.rowSpan }}{{ . }}{{ end }}">
+		{{ with .Site.GetPage "page" "sections/section1.md" }}
 			<h1>{{ .Title }}</h1>
-			{{ .Content }}
+			{{ .Content}}
+		{{ end }}
 		</article>
-			{{ if .Site.Params.subSection1.enable }}
-				{{ partial "subSections/subSection1.html" . }}
-			{{ end }}
+		{{ partial "subSections/subSections.html" . }}
 		<nav class="sub-menu {{ with .Site.Params.section1.subMenuColumnStart }}{{ . }}{{ end }} {{ with .Site.Params.section1.subMenuColumnSpan }}{{ . }}{{ end }} {{ with .Site.Params.section1.subMenuRowStart }}{{ . }}{{ end }} {{ with .Site.Params.section1.subMenuRowSpan }}{{ . }}{{ end }}">
 			{{ partial "subMenus/subMenus.html" . }}
 		</nav>

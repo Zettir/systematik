@@ -2,7 +2,7 @@
 	CSS | Animations
    ---------------------------------------------------------- */
 
-.sub-menu ul::before {
+.ani-1 {
 	animation-name: spot;
 	animation-duration: 4s;
 	animation-iteration-count: infinite;
@@ -24,7 +24,7 @@
 	CSS | Theme - Blue
    ---------------------------------------------------------- */
 
-.blue .sub-menu ul::before {
+.blue .ani-1 {
 	animation-name: spot-blue;
 }
 @keyframes spot-blue {
