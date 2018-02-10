@@ -6,58 +6,157 @@ $blue-color: #0033ff;
 $blue-color-darken: #0033cc;
 $blue-color-lighten: #0044ff;
 
+
+@mixin linear-gradient-b($args...) {
+ background-image: -o-linear-gradient($args); 
+ background-image: -moz-linear-gradient($args); 
+ background-image: -webkit-linear-gradient($args); 
+  background-image: linear-gradient($args); 
+}
+
+
 /* ----------------------------------------------------------
 	CSS | Typografi
    ---------------------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+/*@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
 html {
 	font-size: 1.25em;
 }
 
 body {
-	background-color: white;
-	font-family: 'Ubuntu', sans-serif;
+/*	font-family: 'Ubuntu', sans-serif;*/
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
 	font-weight: 400;
 	line-height: 1.45;
 	color: #333;
 }
 
-p {
-	margin-bottom: 1.3em;
-}
-
 h1, h2, h3, h4 {
-	margin: 0.5em 0;
+	margin: 0 0 0.5em;
 	font-weight: 700;
 	line-height: 1.2;
 }
-
 h1 {
 	margin-top: 0;
-	font-size: 5em;
+	font-size: 5vw;
+	font-weight: 400;
+	line-height: 1em;
+	text-align: center;
+	text-transform: uppercase;
 }
-
+h1 strong {
+	font-weight: 400;
+}
 h2 {
-	font-size: 2.25em;
+	font-size: 4vw;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+	word-break: keep-all;
 }
 
 h3 {
-	font-size: 1.75em;
+	margin-bottom: 20px;
+	padding: 0 15px 10px;
+	font-size: 1.2em;
+	font-weight: 600;
+	border-bottom: 4px solid #333;
 }
 
 h4 {
 	font-size: 1.5em;
 }
-
-small, .font_small {
-	font-size: 0.667em;
+p {
+	display: flex;
+	flex-direction: column;
+	padding: 0 15px;
+	font-size: 1em;
+}
+p:last-child {
+	margin-bottom: 0;
+}
+p a {
+	display: inline-block;
+	color: #666;
+	font-weight: 600;
+}
+p a:hover {
+	color: #202020;
+}
+small, .font-small {
+	font-size: 0.8em;
+}
+strong {
+	color: #333;
+}
+hr {
+	margin: 25px 15px 10px;
+	border-style: dashed;
+}
+.block {
+	display: block;
+}
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.text-upper {
+	text-transform: uppercase;
+}
+.highlight {
+	background-color: #333;
+	border-radius: 4px;
+	color: white;
+	margin: 2px;
+	padding: 2px 6px;
 }
 
 /* ----------------------------------------------------------
 	CSS | General
    ---------------------------------------------------------- */
+
+.none {
+	display: none;
+}
+.style-1 {
+	margin: 25px 15px 10px;
+}
+.style-2 {
+	background-color: white;
+	margin-bottom: 10px;
+	padding: 15px;
+	border: 1px solid #cccccc;
+}
+.button {
+	background-color: white; 
+	display: inline-block;
+	align-self: center;
+	margin: 10px 15px;
+	padding: 16px 32px;
+	color: #333;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	border: 2px solid #333;
+	border-radius: 10px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+.button:hover {
+	background-color: #333;
+	color: white;
+}
+
 
 body {
 	background-color: #f5f5f5;
@@ -90,9 +189,6 @@ body {
 	background-position: center;
 	margin-bottom: 20px;
 	border: 1px solid #e8e8e8;
-}
-.container header img:first-child {
-	display: none;
 }
 
 /* ----------------------------------------------------------
@@ -191,13 +287,35 @@ section {
 
 
 article {
-	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
 }
 
 
 /* ----------------------------------------------------------
 	CSS | Theme - Blue
    ---------------------------------------------------------- */
+
+.blue strong {
+	color: $blue-color;
+}
+
+.blue .highlight {
+	background-color: $blue-color;
+	color: white;
+}
+
+.blue .button {
+	border-color: $blue-color;
+	color: $blue-color;
+}
+.blue .button:hover {
+	background-color: $blue-color;
+	color: white;
+}
+
+
 /* -----------------------------
 	CSS | General
    ----------------------------- */
@@ -239,6 +357,12 @@ article {
    ----------------------------- */
 
 @media screen and (min-width: 668px) {
+	h1 {
+		font-size: 4vw;
+	}
+	h2 {
+		font-size: 3vw;
+	}
 	.sub-menu ul {
 		flex-direction: column;
 	}
@@ -249,20 +373,27 @@ article {
    ----------------------------- */
 
 @media screen and (min-width: 1024px) {
-	article {
-		padding-bottom: 70px;
+
+	h1 {
+		font-size: 3vw;
+	}
+	h2 {
+		font-size: 2vw;
 	}
 	.sub-menu ul {
 		flex-direction: row;
 		position: relative;
 	}
 	.sub-menu ul .subMenuTitle {
-		padding: 0 20px 18px;
+		background-color: rgba(38, 38, 38, 0.7);
+		margin: 0;
+		padding: 18px 25px;
 		position: absolute;
-		left: -15px;
-		bottom: 60px;
+		left: 0;
+		bottom: 70px;
 		font-size: 30px;
 		border: none;
+/*		@include linear-gradient-b( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.70));*/
 	}
 	.sub-menu ul li {
 		padding: 10px 5px;
@@ -272,3 +403,6 @@ article {
 		line-height: 30px;
 	}
 }
+
+
+

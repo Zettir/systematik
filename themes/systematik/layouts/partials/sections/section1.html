@@ -4,7 +4,6 @@
 	<section id="{{ with .Site.Params.section1.slug }}{{ . }}{{ end }}" class="grid">
 		<article class="{{ with .Site.Params.section1.columnStart }}{{ . }}{{ end }} {{ with .Site.Params.section1.columnSpan }}{{ . }}{{ end }} {{ with .Site.Params.section1.rowStart }}{{ . }}{{ end }} {{ with .Site.Params.section1.rowSpan }}{{ . }}{{ end }}">
 		{{ with .Site.GetPage "page" "sections/section1.md" }}
-			<h1>{{ .Title }}</h1>
 			{{ .Content}}
 		{{ end }}
 		</article>

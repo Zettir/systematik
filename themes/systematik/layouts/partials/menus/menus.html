@@ -7,12 +7,14 @@
 		</li>
 		{{ end }}
 	{{ else if eq .Site.Params.header.menu "2" }}
+		<h3 class="subMenuTitle">{{ with .Site.Params.header.menuTitle }}{{ . }}{{ end }}</h3>
 		{{ range .Site.Menus.menu2 }}
 		<li>
 			<a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a>
 		</li>
 		{{ end }}
 	{{ else if eq .Site.Params.header.menu "3" }}
+		<h3 class="subMenuTitle">{{ with .Site.Params.header.menuTitle }}{{ . }}{{ end }}</h3>
 		{{ range .Site.Menus.menu3 }}
 		<li>
 			<a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a>

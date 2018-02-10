@@ -2,8 +2,8 @@
 	<div class="container">
 		<header class="grid">
 			<article class="{{ with .Site.Params.header.columnStart }}{{ . }}{{ end }} {{ with .Site.Params.header.columnSpan }}{{ . }}{{ end }} {{ with .Site.Params.header.rowStart }}{{ . }}{{ end }} {{ with .Site.Params.header.rowSpan }}{{ . }}{{ end }}">
-				<h1>{{ .Title }}</h1>
 				{{ .Content }}
+				<img class="bg none" src="../img/{{ .Params.background }}" alt="Background">
 			</article>
 			{{ partial "subSections/subSection1.html" . }}
 			<nav class="sub-menu {{ with .Site.Params.header.menuColumnStart }}{{ . }}{{ end }} {{ with .Site.Params.header.menuColumnSpan }}{{ . }}{{ end }} {{ with .Site.Params.header.menuRowStart }}{{ . }}{{ end }} {{ with .Site.Params.header.menuRowSpan }}{{ . }}{{ end }}">
