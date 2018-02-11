@@ -1,25 +1,31 @@
-<ul>
+<nav class="sub-menu {{ with .Site.Params.header.styleMenu }}{{ . }}{{ end }} {{ with .Site.Params.header.columnMenu }}{{ . }}{{ end }} {{ with .Site.Params.header.orderMenu }}{{ . }}{{ end }}">
 	{{ if eq .Site.Params.header.menu "1" }}
 		<h3 class="subMenuTitle">{{ with .Site.Params.header.menuTitle }}{{ . }}{{ end }}</h3>
-		{{ range .Site.Menus.menu1 }}
-		<li>
-			<a href="{{ .URL }}">{{ .Pre }}<span>{{ .Name | markdownify }}</span></a>
-		</li>
-		{{ end }}
+		<ul>
+			{{ range .Site.Menus.menu1 }}
+			<li>
+				<a href="{{ .URL }}">{{ .Pre }}<span>{{ .Name | markdownify }}</span></a>
+			</li>
+			{{ end }}
+		</ul>
 	{{ else if eq .Site.Params.header.menu "2" }}
 		<h3 class="subMenuTitle">{{ with .Site.Params.header.menuTitle }}{{ . }}{{ end }}</h3>
-		{{ range .Site.Menus.menu2 }}
-		<li>
-			<a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a>
-		</li>
-		{{ end }}
+		<ul>
+			{{ range .Site.Menus.menu2 }}
+			<li>
+				<a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a>
+			</li>
+			{{ end }}
+		</ul>
 	{{ else if eq .Site.Params.header.menu "3" }}
 		<h3 class="subMenuTitle">{{ with .Site.Params.header.menuTitle }}{{ . }}{{ end }}</h3>
-		{{ range .Site.Menus.menu3 }}
-		<li>
-			<a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a>
-		</li>
-		{{ end }}
+		<ul>
+			{{ range .Site.Menus.menu3 }}
+			<li>
+				<a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a>
+			</li>
+			{{ end }}
+		</ul>
 	{{ else }}
 	{{ end }}
-</ul>
+</nav>

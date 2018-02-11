@@ -1,5 +1,5 @@
+<h3 class="subMenuTitle">{{ with .Site.Params.section1.subMenuTitle }}{{ . }}{{ end }}</h3>
 <ul>
-	<h3 class="subMenuTitle">{{ with .Site.Params.section1.subMenuTitle }}{{ . }}{{ end }}</h3>
 	{{ if eq .Site.Params.section1.subMenu "1" }}
 		{{ range .Site.Menus.submenu1 }}
 		<li>

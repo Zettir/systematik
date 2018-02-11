@@ -1,0 +1,56 @@
+<!----------------------------------------------------------
+	HTML | Positions - Section 4
+  ---------------------------------------------------------->
+{{ if .Site.Params.section4.enable }}
+	<!-------------------------------
+		HTML | Position 1
+	  ------------------------------->
+
+	{{ if ne .Site.Params.section4.position1 "" }}
+		{{ if eq .Site.Params.section4.position1 "content" }}
+			{{ partial "contents/content-section4.html" . }}
+		{{ else if eq .Site.Params.section4.position1 "subSection" }}
+			{{ partial "subSections/subSections.html" . }}
+		{{ else if eq .Site.Params.section4.position1 "menu" }}
+			{{ partial "menus/menus.html" . }}
+		{{ else }}
+			{{ partial "positions/error.html" . }}
+		{{ end }}
+	{{ else }}
+	{{ end }}
+
+	<!-------------------------------
+		HTML | Position 2
+	  ------------------------------->
+
+	{{ if ne .Site.Params.section4.position2 "" }}
+		{{ if eq .Site.Params.section4.position2 "content" }}
+			{{ partial "contents/content-section4.html" . }}
+		{{ else if eq .Site.Params.section4.position2 "subSection" }}
+			{{ partial "subSections/subSections.html" . }}
+		{{ else if eq .Site.Params.section4.position2 "menu" }}
+			{{ partial "menus/menus.html" . }}
+		{{ else }}
+			{{ partial "positions/error.html" . }}
+		{{ end }}
+	{{ else }}
+	{{ end }}
+
+	<!-------------------------------
+		HTML | Position 3
+	  ------------------------------->
+
+	{{ if ne .Site.Params.section4.position3 "" }}
+		{{ if eq .Site.Params.section4.position3 "content" }}
+			{{ partial "contents/content-section4.html" . }}
+		{{ else if eq .Site.Params.section4.position3 "subSection" }}
+			{{ partial "subSections/subSections.html" . }}
+		{{ else if eq .Site.Params.section4.position3 "menu" }}
+			{{ partial "menus/menus.html" . }}
+		{{ else }}
+			{{ partial "positions/error.html" . }}
+		{{ end }}
+	{{ else }}
+	{{ end }}
+
+{{ end }}

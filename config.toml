@@ -12,21 +12,36 @@ sectionPagesMenu = "mainMenu"
 
 # Site - Header
 [params.header]
-	columnStart 	= "s-c-1 m-c-2 l-c-1"
-	columnSpan 		= "s-cs-3 l-cs-2"
-
-	rowStart		= "s-r-2 m-r-1"
-	rowSpan			= "s-rs-1"
+	
+	subSection = "1"
 
 	menu = "1"
 		menuTitle = "Documentation"
-		subMenuTheme = "black"
+		menuTheme = "black"
 
-		menuColumnStart 	= "s-c-1"
-		menuColumnSpan 		= "s-cs-3 m-cs-1 l-cs-2"
+	# xs / Xtra Small:	Screen under 468px
+	# sm / Small:		Screen between 468px & 768px
+	# md / Medium:		Screen between 768p & 1200px
+	# lg / Large:		Screen over 1200px
 
-		menuRowStart 		= "s-r-1 l-r-2"
-		menuRowSpan 		= "s-rs-1 m-rs-2 l-rs-1"
+		####theme = ""
+		style = "xs-col sm-col sm-col-row md-row"
+
+		styleArticle		= ""
+		styleContent		= ""
+		styleMenu			= "bottom-lg"
+		styleSubSection		= ""
+
+		orderArticle		= "odr-xs-1"
+		orderContent		= "odr-xs-2 odr-sm-1 odr-md-2"
+		orderMenu			= "odr-xs-1 odr-sm-2 odr-md-1 odr-lg-2"
+		orderSubSection		= "odr-xs-3"
+
+		columnArticle		= "col-xs-12 col-lg-9"
+		columnContent		= "col-xs-12 col-md-8 col-lg-12"
+		columnMenu			= "col-xs-12 col-md-4 col-lg-12"
+		columnSubSection	= "col-xs-12 col-md-12 col-lg-3"
+
 
 [params.sections]
 	row1 = "section1"
@@ -40,24 +55,35 @@ sectionPagesMenu = "mainMenu"
 [params.section1]
 	enable = true
 	slug = "get-started"
-
-	columnStart 	= "s-c-1 m-c-2 l-c-1"
-	columnSpan 		= "s-cs-3 l-cs-2"
-
-	rowStart		= "s-r-2 m-r-1"
-	rowSpan			= "s-rs-1"
-
+	
 	subSection = "1"
 
-	subMenu = "1"
-		subMenuTitle = "Test"
-		subMenuTheme = "light"
+	menu = "1"
+		menuTitle = "Documentation"
+		menuTheme = "black"
 
-		subMenuColumnStart 	= "s-c-1"
-		subMenuColumnSpan 	= "s-cs-3 m-cs-1 l-cs-2"
+	# xs / Xtra Small:	Screen under 468px
+	# sm / Small:		Screen between 468px & 768px
+	# md / Medium:		Screen between 768p & 1200px
+	# lg / Large:		Screen over 1200px
 
-		subMenuRowStart		= "s-r-1 l-r-2"
-		subMenuRowSpan 		= "s-rs-1 m-rs-2 l-rs-1"
+		####theme = ""
+		style = "xs-col sm-col sm-col-row md-row"
+
+		styleArticle		= ""
+		styleContent		= ""
+		styleMenu			= "bottom-lg"
+		styleSubSection		= ""
+
+		orderArticle		= "odr-xs-1"
+		orderContent		= "odr-xs-2 odr-sm-1 odr-md-2"
+		orderMenu			= "odr-xs-1 odr-sm-2 odr-md-1 odr-lg-2"
+		orderSubSection		= "odr-xs-3"
+
+		columnArticle		= "col-xs-12 col-lg-9"
+		columnContent		= "col-xs-12 col-md-8 col-lg-12"
+		columnMenu			= "col-xs-12 col-md-4 col-lg-12"
+		columnSubSection	= "col-xs-12 col-md-12 col-lg-3"
 
 
 # Sub Menu - 1

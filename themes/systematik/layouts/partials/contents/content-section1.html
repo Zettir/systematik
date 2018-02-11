@@ -1,0 +1,7 @@
+<!-------------------------------
+	HTML | Content
+  ------------------------------->
+<article class="{{ with .Site.Params.header.columnStart }}{{ . }}{{ end }}">
+	{{ .Content }}
+	<img class="bg none" src="../img/{{ .Params.background }}" alt="Background">
+</article>

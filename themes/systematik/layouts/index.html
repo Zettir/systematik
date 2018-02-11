@@ -1,14 +1,11 @@
 {{ partial "header.html" . }}
-	<div class="container">
-		<header class="grid">
-			<article class="{{ with .Site.Params.header.columnStart }}{{ . }}{{ end }} {{ with .Site.Params.header.columnSpan }}{{ . }}{{ end }} {{ with .Site.Params.header.rowStart }}{{ . }}{{ end }} {{ with .Site.Params.header.rowSpan }}{{ . }}{{ end }}">
-				{{ .Content }}
-				<img class="bg none" src="../img/{{ .Params.background }}" alt="Background">
-			</article>
-			{{ partial "subSections/subSection1.html" . }}
-			<nav class="sub-menu {{ with .Site.Params.header.menuColumnStart }}{{ . }}{{ end }} {{ with .Site.Params.header.menuColumnSpan }}{{ . }}{{ end }} {{ with .Site.Params.header.menuRowStart }}{{ . }}{{ end }} {{ with .Site.Params.header.menuRowSpan }}{{ . }}{{ end }}">
+	<div class="container positionTheme">
+		<header class="header flex {{ with .Site.Params.header.style }}{{ . }}{{ end }}">
+			<article class="flex {{ with .Site.Params.header.styleArticle }}{{ . }}{{ end }} {{ with .Site.Params.header.columnArticle }}{{ . }}{{ end }} {{ with .Site.Params.header.orderArticle }}{{ . }}{{ end }}">
+				{{ partial "contents/content-header.html" . }}
 				{{ partial "menus/menus.html" . }}
-			</nav>
+			</article>
+			{{ partial "subSections/subSections.html" . }}
 		</header>
 		{{ partial "sections.html" . }}
 	</div>

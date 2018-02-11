@@ -8,7 +8,7 @@ background: "bg-2.png"
 
 # Build **custom** websites
 
-## Systematik is a modern responsive front-end framework
+## Systematik is a modern responsive front-end framework based on the flex display property
 
-<img src="img/screens.svg" alt="Screens" style="width: 70%; align-self: center; margin-top: 1.3em;">
+<img src="img/screens.svg" alt="Screens" style="min-width: 220px; max-width: 500px; align-self: center; margin-top: 1.3em;">
 

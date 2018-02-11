@@ -1,0 +1,7 @@
+<!-------------------------------
+	HTML | Content
+  ------------------------------->
+<div class="content {{ with .Site.Params.header.styleContent }}{{ . }}{{ end }} {{ with .Site.Params.header.columnContent }}{{ . }}{{ end }} {{ with .Site.Params.header.orderContent }}{{ . }}{{ end }}">
+	{{ .Content }}
+	<img class="bg none" src="../img/{{ .Params.background }}" alt="Background">
+</div>

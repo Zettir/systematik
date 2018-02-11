@@ -1,0 +1,6 @@
+<!-------------------------------
+	HTML | Menu
+  ------------------------------->
+<nav class="sub-menu {{ with .Site.Params.header.menuColumnStart }}{{ . }}{{ end }} {{ with .Site.Params.header.menuColumnSpan }}{{ . }}{{ end }} {{ with .Site.Params.header.menuRowStart }}{{ . }}{{ end }} {{ with .Site.Params.header.menuRowSpan }}{{ . }}{{ end }}">
+	{{ partial "menus/menus.html" . }}
+</nav>
