@@ -1,9 +1,9 @@
-baseURL = "http://niels-gerdes.dk/kea/sem-3/tema-9/opg/systematik/"
+baseurl = "http://example.com/"
 languageCode = "en-us"
 title = "Systematik"
 theme = "systematik"
 sectionPagesMenu = "mainMenu"
-themesdir = "../.."
+#themesdir = "../.."
 
 [params]
 	themeColor = "blue"
