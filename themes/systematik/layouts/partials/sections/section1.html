@@ -1,6 +1,14 @@
 <!-------------------------------
 	HTML | Section 1
   ------------------------------->
-	<section id="{{ with .Site.Params.section1.slug }}{{ . }}{{ end }}" class="grid">
-		{{ partial "positions/positions-section1.html" . }}
-	</section>
+<section id="{{ with .Site.Params.section1.slug }}{{ . }}{{ end }}" class="section1 flex {{ with .Site.Params.section1.style }}{{ . }}{{ end }}">
+	<article class="flex {{ with .Site.Params.section1.styleArticle }}{{ . }}{{ end }} {{ with .Site.Params.section1.columnArticle }}{{ . }}{{ end }} {{ with .Site.Params.section1.orderArticle }}{{ . }}{{ end }}">
+		{{ partial "contents/content-section1.html" . }}
+		{{ partial "subMenus/subMenus.html" . }}
+	</article>
+	{{ if .Params.header.subSection.enable }}
+		<div class="sub-section {{ with .Site.Params.section1.styleSubSection }}{{ . }}{{ end }} {{ with .Site.Params.section1.columnSubSection }}{{ . }}{{ end }} {{ with .Site.Params.section1.orderMenu }}{{ . }}{{ end }}">
+			{{ partial "subSections/subSections.html" . }}
+		</div>
+	{{ end }}
+</section>

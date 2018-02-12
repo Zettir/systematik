@@ -5,7 +5,9 @@
 				{{ partial "contents/content-header.html" . }}
 				{{ partial "menus/menus.html" . }}
 			</article>
-			{{ partial "subSections/subSections.html" . }}
+			<div class="sub-section {{ with .Site.Params.header.styleSubSection }}{{ . }}{{ end }} {{ with .Site.Params.header.columnSubSection }}{{ . }}{{ end }} {{ with .Site.Params.header.orderMenu }}{{ . }}{{ end }}">
+				{{ partial "subSections/subSections.html" . }}
+			</div>
 		</header>
 		{{ partial "sections.html" . }}
 	</div>

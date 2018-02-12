@@ -1,41 +1,58 @@
-<h3 class="subMenuTitle">{{ with .Site.Params.section1.subMenuTitle }}{{ . }}{{ end }}</h3>
-<ul>
+<nav class="sub-menu {{ with .Site.Params.section1.styleSubMenu }}{{ . }}{{ end }} {{ with .Site.Params.section1.columnSubMenu }}{{ . }}{{ end }} {{ with .Site.Params.section1.orderSubMenu }}{{ . }}{{ end }}">
 	{{ if eq .Site.Params.section1.subMenu "1" }}
-		{{ range .Site.Menus.submenu1 }}
-		<li>
-			<a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a>
-		</li>
-		{{ end }}
+		<h3 class="subMenuTitle">{{ with .Site.Params.section1.subMenuTitle }}{{ . }}{{ end }}</h3>
+		<ul>
+			{{ range .Site.Menus.submenu1 }}
+				<li>
+					<a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a>
+				</li>
+			{{ end }}
+		</ul>
 	{{ else if eq .Site.Params.section1.subMenu "2" }}
-		{{ range .Site.Menus.submenu2 }}
-		<li>
-			<a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a>
-		</li>
-		{{ end }}
+		<h3 class="subMenuTitle">{{ with .Site.Params.section1.subMenuTitle }}{{ . }}{{ end }}</h3>
+		<ul>
+			{{ range .Site.Menus.submenu2 }}
+				<li>
+					<a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a>
+				</li>
+			{{ end }}
+		</ul>
 	{{ else if eq .Site.Params.section1.subMenu "3" }}
-		{{ range .Site.Menus.submenu3 }}
-		<li>
-			<a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a>
-		</li>
-		{{ end }}
+		<h3 class="subMenuTitle">{{ with .Site.Params.section1.subMenuTitle }}{{ . }}{{ end }}</h3>
+		<ul>
+			{{ range .Site.Menus.submenu3 }}
+				<li>
+					<a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a>
+				</li>
+			{{ end }}
+		</ul>
 	{{ else if eq .Site.Params.section1.subMenu "4" }}
-		{{ range .Site.Menus.submenu4 }}
-		<li>
-			<a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a>
-		</li>
-		{{ end }}
+		<h3 class="subMenuTitle">{{ with .Site.Params.section1.subMenuTitle }}{{ . }}{{ end }}</h3>
+		<ul>
+			{{ range .Site.Menus.submenu4 }}
+				<li>
+					<a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a>
+				</li>
+			{{ end }}
+		</ul>
 	{{ else if eq .Site.Params.section1.subMenu "5" }}
-		{{ range .Site.Menus.submenu5 }}
-		<li>
-			<a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a>
-		</li>
-		{{ end }}
+		<h3 class="subMenuTitle">{{ with .Site.Params.section1.subMenuTitle }}{{ . }}{{ end }}</h3>
+		<ul>
+			{{ range .Site.Menus.submenu5 }}
+				<li>
+					<a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a>
+				</li>
+			{{ end }}
+		</ul>
 	{{ else if eq .Site.Params.section1.subMenu "6" }}
-		{{ range .Site.Menus.submenu6 }}
-		<li>
-			<a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a>
-		</li>
-		{{ end }}
+		<h3 class="subMenuTitle">{{ with .Site.Params.section1.subMenuTitle }}{{ . }}{{ end }}</h3>
+		<ul>
+			{{ range .Site.Menus.submenu6 }}
+				<li>
+					<a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a>
+				</li>
+			{{ end }}
+		</ul>
 	{{ else }}
 	{{ end }}
-</ul>
+</nav>

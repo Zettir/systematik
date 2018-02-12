@@ -1,7 +1,9 @@
 <!-------------------------------
 	HTML | Content
   ------------------------------->
-<article class="{{ with .Site.Params.header.columnStart }}{{ . }}{{ end }}">
-	{{ .Content }}
+<div class="content {{ with .Site.Params.section1.styleContent }}{{ . }}{{ end }} {{ with .Site.Params.section1.columnContent }}{{ . }}{{ end }} {{ with .Site.Params.section1.orderContent }}{{ . }}{{ end }}">
+	{{ with .Site.GetPage "page" "sections/section1.md" }}
+		{{ .Content }}
+	{{ end }}
 	<img class="bg none" src="../img/{{ .Params.background }}" alt="Background">
-</article>
+</div>

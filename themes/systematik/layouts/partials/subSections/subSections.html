@@ -1,104 +1,122 @@
-<!-------------------------------
-	HTML | Section - 1
-------------------------------->
+	<!-------------------------------
+		HTML | Section - 1
+	------------------------------->
 
-{{ if eq .Site.Params.section1.subSection "1" }}
-	{{ partial "subSections/subSection1.html" . }}
-{{ else if eq .Site.Params.section1.subSection "2" }}
-	{{ partial "sections/subSection2.html" . }}
-{{ else if eq .Site.Params.section1.subSection "3" }}
-	{{ partial "sections/subSection3.html" . }}
-{{ else if eq .Site.Params.section1.subSection "4" }}
-	{{ partial "sections/subSection4.html" . }}
-{{ else if eq .Site.Params.section1.subSection "5" }}
-	{{ partial "sections/subSection5.html" . }}
-{{ else if eq .Site.Params.section1.subSection "6" }}
-	{{ partial "sections/subSection6.html" . }}
+	{{ if eq .Site.Params.header.subSection "1" }}
+		{{ partial "subSections/subSection1.html" . }}
+	{{ else if eq .Site.Params.header.subSection "2" }}
+		{{ partial "subSections/subSection2.html" . }}
+	{{ else if eq .Site.Params.header.subSection "3" }}
+		{{ partial "subSections/subSection3.html" . }}
+	{{ else if eq .Site.Params.header.subSection "4" }}
+		{{ partial "subSections/subSection4.html" . }}
+	{{ else if eq .Site.Params.header.subSection "5" }}
+		{{ partial "subSections/subSection5.html" . }}
+	{{ else if eq .Site.Params.header.subSection "6" }}
+		{{ partial "subSections/subSection6.html" . }}
 
-<!-------------------------------
-	HTML | Section - 2
-------------------------------->
+	<!-------------------------------
+		HTML | Section - 1
+	------------------------------->
 
-{{ else if eq .Site.Params.section2.subSection "1" }}
-	{{ partial "subSections/subSection1.html" . }}
-{{ else if eq .Site.Params.section2.subSection "2" }}
-	{{ partial "sections/subSection2.html" . }}
-{{ else if eq .Site.Params.section2.subSection "3" }}
-	{{ partial "sections/subSection3.html" . }}
-{{ else if eq .Site.Params.section2.subSection "4" }}
-	{{ partial "sections/subSection4.html" . }}
-{{ else if eq .Site.Params.section2.subSection "5" }}
-	{{ partial "sections/subSection5.html" . }}
-{{ else if eq .Site.Params.section2.subSection "6" }}
-	{{ partial "sections/subSection6.html" . }}
+	{{ else if eq .Site.Params.section1.subSection "1" }}
+		{{ partial "subSections/subSection1.html" . }}
+	{{ else if eq .Site.Params.section1.subSection "2" }}
+		{{ partial "subSections/subSection2.html" . }}
+	{{ else if eq .Site.Params.section1.subSection "3" }}
+		{{ partial "subSections/subSection3.html" . }}
+	{{ else if eq .Site.Params.section1.subSection "4" }}
+		{{ partial "subSections/subSection4.html" . }}
+	{{ else if eq .Site.Params.section1.subSection "5" }}
+		{{ partial "subSections/subSection5.html" . }}
+	{{ else if eq .Site.Params.section1.subSection "6" }}
+		{{ partial "subSections/subSection6.html" . }}
 
-<!-------------------------------
-	HTML | Section - 3
-------------------------------->
+	<!-------------------------------
+		HTML | Section - 2
+	------------------------------->
 
-{{ else if eq .Site.Params.section3.subSection "1" }}
-	{{ partial "subSections/subSection1.html" . }}
-{{ else if eq .Site.Params.section3.subSection "2" }}
-	{{ partial "sections/subSection2.html" . }}
-{{ else if eq .Site.Params.section3.subSection "3" }}
-	{{ partial "sections/subSection3.html" . }}
-{{ else if eq .Site.Params.section3.subSection "4" }}
-	{{ partial "sections/subSection4.html" . }}
-{{ else if eq .Site.Params.section3.subSection "5" }}
-	{{ partial "sections/subSection5.html" . }}
-{{ else if eq .Site.Params.section3.subSection "6" }}
-	{{ partial "sections/subSection6.html" . }}
+	{{ else if eq .Site.Params.section2.subSection "1" }}
+		{{ partial "subSections/subSection1.html" . }}
+	{{ else if eq .Site.Params.section2.subSection "2" }}
+		{{ partial "subSections/subSection2.html" . }}
+	{{ else if eq .Site.Params.section2.subSection "3" }}
+		{{ partial "subSections/subSection3.html" . }}
+	{{ else if eq .Site.Params.section2.subSection "4" }}
+		{{ partial "subSections/subSection4.html" . }}
+	{{ else if eq .Site.Params.section2.subSection "5" }}
+		{{ partial "subSections/subSection5.html" . }}
+	{{ else if eq .Site.Params.section2.subSection "6" }}
+		{{ partial "subSections/subSection6.html" . }}
 
-<!-------------------------------
-	HTML | Section - 4
-------------------------------->
+	<!-------------------------------
+		HTML | Section - 3
+	------------------------------->
 
-{{ else if eq .Site.Params.section4.subSection "1" }}
-	{{ partial "subSections/subSection1.html" . }}
-{{ else if eq .Site.Params.section4.subSection "2" }}
-	{{ partial "sections/subSection2.html" . }}
-{{ else if eq .Site.Params.section4.subSection "3" }}
-	{{ partial "sections/subSection3.html" . }}
-{{ else if eq .Site.Params.section4.subSection "4" }}
-	{{ partial "sections/subSection4.html" . }}
-{{ else if eq .Site.Params.section4.subSection "5" }}
-	{{ partial "sections/subSection5.html" . }}
-{{ else if eq .Site.Params.section4.subSection "6" }}
-	{{ partial "sections/subSection6.html" . }}
+	{{ else if eq .Site.Params.section3.subSection "1" }}
+		{{ partial "subSections/subSection1.html" . }}
+	{{ else if eq .Site.Params.section3.subSection "2" }}
+		{{ partial "subSections/subSection2.html" . }}
+	{{ else if eq .Site.Params.section3.subSection "3" }}
+		{{ partial "subSections/subSection3.html" . }}
+	{{ else if eq .Site.Params.section3.subSection "4" }}
+		{{ partial "subSections/subSection4.html" . }}
+	{{ else if eq .Site.Params.section3.subSection "5" }}
+		{{ partial "subSections/subSection5.html" . }}
+	{{ else if eq .Site.Params.section3.subSection "6" }}
+		{{ partial "subSections/subSection6.html" . }}
 
-<!-------------------------------
-	HTML | Section - 5
-------------------------------->
+	<!-------------------------------
+		HTML | Section - 4
+	------------------------------->
 
-{{ else if eq .Site.Params.section5.subSection "1" }}
-	{{ partial "subSections/subSection1.html" . }}
-{{ else if eq .Site.Params.section5.subSection "2" }}
-	{{ partial "sections/subSection2.html" . }}
-{{ else if eq .Site.Params.section5.subSection "3" }}
-	{{ partial "sections/subSection3.html" . }}
-{{ else if eq .Site.Params.section5.subSection "4" }}
-	{{ partial "sections/subSection4.html" . }}
-{{ else if eq .Site.Params.section5.subSection "5" }}
-	{{ partial "sections/subSection5.html" . }}
-{{ else if eq .Site.Params.section5.subSection "6" }}
-	{{ partial "sections/subSection6.html" . }}
+	{{ else if eq .Site.Params.section4.subSection "1" }}
+		{{ partial "subSections/subSection1.html" . }}
+	{{ else if eq .Site.Params.section4.subSection "2" }}
+		{{ partial "subSections/subSection2.html" . }}
+	{{ else if eq .Site.Params.section4.subSection "3" }}
+		{{ partial "subSections/subSection3.html" . }}
+	{{ else if eq .Site.Params.section4.subSection "4" }}
+		{{ partial "subSections/subSection4.html" . }}
+	{{ else if eq .Site.Params.section4.subSection "5" }}
+		{{ partial "subSections/subSection5.html" . }}
+	{{ else if eq .Site.Params.section4.subSection "6" }}
+		{{ partial "subSections/subSection6.html" . }}
 
-<!-------------------------------
-	HTML | Section - 6
-------------------------------->
+	<!-------------------------------
+		HTML | Section - 5
+	------------------------------->
 
-{{ else if eq .Site.Params.section6.subSection "1" }}
-	{{ partial "subSections/subSection1.html" . }}
-{{ else if eq .Site.Params.section6.subSection "2" }}
-	{{ partial "sections/subSection2.html" . }}
-{{ else if eq .Site.Params.section6.subSection "3" }}
-	{{ partial "sections/subSection3.html" . }}
-{{ else if eq .Site.Params.section6.subSection "4" }}
-	{{ partial "sections/subSection4.html" . }}
-{{ else if eq .Site.Params.section6.subSection "5" }}
-	{{ partial "sections/subSection5.html" . }}
-{{ else if eq .Site.Params.section6.subSection "6" }}
-	{{ partial "sections/subSection6.html" . }}
-{{ else }}
-	{{ partial "sections/error.html" . }}
-{{ end }}
+	{{ else if eq .Site.Params.section5.subSection "1" }}
+		{{ partial "subSections/subSection1.html" . }}
+	{{ else if eq .Site.Params.section5.subSection "2" }}
+		{{ partial "subSections/subSection2.html" . }}
+	{{ else if eq .Site.Params.section5.subSection "3" }}
+		{{ partial "subSections/subSection3.html" . }}
+	{{ else if eq .Site.Params.section5.subSection "4" }}
+		{{ partial "subSections/subSection4.html" . }}
+	{{ else if eq .Site.Params.section5.subSection "5" }}
+		{{ partial "subSections/subSection5.html" . }}
+	{{ else if eq .Site.Params.section5.subSection "6" }}
+		{{ partial "subSections/subSection6.html" . }}
+
+	<!-------------------------------
+		HTML | Section - 6
+	------------------------------->
+
+	{{ else if eq .Site.Params.section6.subSection "1" }}
+		{{ partial "subSections/subSection1.html" . }}
+	{{ else if eq .Site.Params.section6.subSection "2" }}
+		{{ partial "subSections/subSection2.html" . }}
+	{{ else if eq .Site.Params.section6.subSection "3" }}
+		{{ partial "subSections/subSection3.html" . }}
+	{{ else if eq .Site.Params.section6.subSection "4" }}
+		{{ partial "subSections/subSection4.html" . }}
+	{{ else if eq .Site.Params.section6.subSection "5" }}
+		{{ partial "subSections/subSection5.html" . }}
+	{{ else if eq .Site.Params.section6.subSection "6" }}
+		{{ partial "subSections/subSection6.html" . }}
+
+	{{ else }}
+		{{ partial "subSections/error.html" . }}
+	{{ end }}

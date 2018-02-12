@@ -12,6 +12,7 @@ sectionPagesMenu = "mainMenu"
 
 # Site - Header
 [params.header]
+	enable = true
 	
 	subSection = "1"
 
@@ -56,11 +57,11 @@ sectionPagesMenu = "mainMenu"
 	enable = true
 	slug = "get-started"
 	
-	subSection = "1"
+	#subSection = "2"
 
-	menu = "1"
-		menuTitle = "Documentation"
-		menuTheme = "black"
+	subMenu = "1"
+		#subMenuTitle = "Get Started"
+		subMenuTheme = "black"
 
 	# xs / Xtra Small:	Screen under 468px
 	# sm / Small:		Screen between 468px & 768px
@@ -68,25 +69,25 @@ sectionPagesMenu = "mainMenu"
 	# lg / Large:		Screen over 1200px
 
 		####theme = ""
-		style = "xs-col sm-col sm-col-row md-row"
+		style = "xs-row"
 
 		styleArticle		= ""
 		styleContent		= ""
-		styleMenu			= "bottom-lg"
+		styleSubMenu		= ""
 		styleSubSection		= ""
 
 		orderArticle		= "odr-xs-1"
-		orderContent		= "odr-xs-2 odr-sm-1 odr-md-2"
-		orderMenu			= "odr-xs-1 odr-sm-2 odr-md-1 odr-lg-2"
-		orderSubSection		= "odr-xs-3"
+		orderContent		= "odr-xs-1 odr-lg-2"
+		orderSubMenu		= "odr-xs-1"
+		orderSubSection		= "odr-xs-1"
 
-		columnArticle		= "col-xs-12 col-lg-9"
-		columnContent		= "col-xs-12 col-md-8 col-lg-12"
-		columnMenu			= "col-xs-12 col-md-4 col-lg-12"
-		columnSubSection	= "col-xs-12 col-md-12 col-lg-3"
+		columnArticle		= "col-xs-12"
+		columnContent		= "col-xs-12 col-lg-8"
+		columnSubMenu		= "col-xs-12 col-lg-4"
+		columnSubSection	= "col-xs-12"
 
 
-# Sub Menu - 1
+# Menu - 1
 [[menu.menu1]]
 	name = "Get Started"
 	url = "#get-started"
@@ -104,13 +105,8 @@ sectionPagesMenu = "mainMenu"
 	weight = 3
 
 
-# Sub Menu - 2
-[[menu.submenu2]]
+# Sub Menu - 1
+[[menu.submenu1]]
 	name = "Link 2"
-	url = "#"
-	weight = 20
-
-[[menu.submenu3]]
-	name = "Link 3"
 	url = "#"
 	weight = 20

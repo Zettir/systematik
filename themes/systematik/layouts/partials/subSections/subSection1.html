@@ -1,5 +1,3 @@
-{{ with .Site.GetPage "page" "subSections/subSection1.md" }}
-<div class="sub-section {{ with .Site.Params.header.styleSubSection }}{{ . }}{{ end }} {{ with .Site.Params.header.columnSubSection }}{{ . }}{{ end }} {{ with .Site.Params.header.orderMenu }}{{ . }}{{ end }}">
-	{{ .Content }}
-</div>
-{{ end }}
+	{{ with .Site.GetPage "page" "subSections/subSection1.md" }}
+		{{ .Content }}
+	{{ end }}
