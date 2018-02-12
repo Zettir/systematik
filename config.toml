@@ -3,7 +3,6 @@ languageCode = "en-us"
 title = "Systematik"
 theme = "systematik"
 sectionPagesMenu = "mainMenu"
-themesdir = "../.."  
 
 [params]
 	themeColor = "blue"
