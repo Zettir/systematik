@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Systematik</title>
-    <link>https://zettir.github.io/systematik/</link>
-    <description>Recent content in Home on Systematik</description>
+    <title>SubSections on Systematik</title>
+    <link>https://zettir.github.io/systematik/subsections/</link>
+    <description>Recent content in SubSections on Systematik</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Feb 2018 09:02:11 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 01 Feb 2018 08:53:24 +0100</lastBuildDate>
     
-	<atom:link href="https://zettir.github.io/systematik/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zettir.github.io/systematik/subsections/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -32,15 +32,6 @@ Find the project on GitHub her under!
       
       <guid>https://zettir.github.io/systematik/subsections/subsection2/</guid>
       <description>Get more!</description>
-    </item>
-    
-    <item>
-      <title>Section 1</title>
-      <link>https://zettir.github.io/systematik/sections/section1/</link>
-      <pubDate>Thu, 01 Feb 2018 08:53:11 +0100</pubDate>
-      
-      <guid>https://zettir.github.io/systematik/sections/section1/</guid>
-      <description> Get Started Learn how to easily start using Systematik in your website. </description>
     </item>
     
   </channel>

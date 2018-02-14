@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sections on Systematik</title>
+    <link>https://zettir.github.io/systematik/sections/</link>
+    <description>Recent content in Sections on Systematik</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Feb 2018 08:53:11 +0100</lastBuildDate>
+    
+	<atom:link href="https://zettir.github.io/systematik/sections/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Section 1</title>
+      <link>https://zettir.github.io/systematik/sections/section1/</link>
+      <pubDate>Thu, 01 Feb 2018 08:53:11 +0100</pubDate>
+      
+      <guid>https://zettir.github.io/systematik/sections/section1/</guid>
+      <description> Get Started Learn how to easily start using Systematik in your website. </description>
+    </item>
+    
+  </channel>
+</rss>
